@@ -76,6 +76,8 @@ dependencies {
     implementation("com.mapbox.navigationux:android:1.0.0-beta.25")
     implementation("com.mapbox.navigationux:search-api:1.0.0-beta.25")
 
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
