@@ -63,9 +63,15 @@ class SimpleNavTest : Fragment() {
 
         binding.startButton.setOnClickListener {
             MainScope().launch {
-                Dash.controller.setDestination(
+                val result = Dash.controller.setDestination(
                     PointDestination(longitude = -77.03394+0.01, latitude = 38.899929+0.01)
                 )
+
+                result.onSuccess {
+                    Dash.controller.startNavigation(it.routes.first())
+                }.onFailure {
+                    Log.e(TAG, "setDestination failed: $it")
+                }
             }
         }
     }
