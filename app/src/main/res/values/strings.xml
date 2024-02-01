@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Navigation3Tryout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Simple Nav Test</string>
+</resources>
