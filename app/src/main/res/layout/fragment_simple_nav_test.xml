@@ -14,8 +14,6 @@
         android:background="#ECBCBC"
         android:fontFamily="sans-serif-black"
         android:text="@string/hello_blank_fragment"
-        app:layout_constraintBottom_toTopOf="@+id/showButton"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -23,7 +21,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Show"
-        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
@@ -31,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start"
-        app:layout_constraintBottom_toTopOf="@+id/container"
         app:layout_constraintTop_toBottomOf="@+id/showButton" />
 
     <FrameLayout
